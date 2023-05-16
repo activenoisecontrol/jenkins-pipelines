@@ -7,7 +7,7 @@ pipeline {
     stage('Example') {
       steps {
         script {
-          input.hasPermissionsDeploy()
+          sanity.hasPermissionsDeploy()
         }
       }
     }
